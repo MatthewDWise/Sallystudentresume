@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+    <div id="application-body"></div>
+    <div id="application-experience"></div>
+    <div id="application-education"></div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      
+      ReactDOM.render(
+      <header style ={{backgroundColor: "gray", textAlign: 'center', paddingTop: "20px", paddingBottom: "20px"}}>
+        <h1 style={{textAlign:"center" ,color:"white"}}>Sally B. Student</h1>
+        <p style={{textAlign:"center" , color:"white"}}>(555)555-5555 1600 Pennsylvania Ave. NW, Washington, D.C. 20500 sally@InternetExplorer.old</p>
+                </header>,
+        document.querySelector('#application-root')
+      );
+
+      ReactDOM.render(
+        <img style={{marginLeft:"45%", borderRadius:"80%"}}src ="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" />,
+        document.querySelector('#application-body')
+      );
+
+     ReactDOM.render(
+        <div style={{textAlign: 'center'}}>  
+      <h2>Carnival Barker for Carnivals R' Us</h2>
+        <p>November 1, 2017 - present</p>
+        <h4>Duties included</h4>
+        <ul style ={{listStylePosition: "inside"}}>
+          <li>Shouting at passing people</li>
+          <li>Creating rhymes to entice customers</li>
+          <li>Juggling and Tumbling as needed</li>
+          </ul>
+
+          <h2>Rodeo Clown for Bulls, Bulls, Bulls!</h2>
+          <p>June 16, 2015 - October 12, 2017</p>
+          <h4>Duties included</h4>
+          <ul style ={{listStylePosition: 'inside'}}>
+            <li>Makeup application</li>
+            <li>Running as needed</li>
+            <li>Speaking Bull for distractions</li>
+            </ul>
+            </div>,
+      
+            document.querySelector('#application-experience')
+      );
+
+      ReactDOM.render(
+        <div style={{textAlign: 'center'}}>
+        <h3>Education</h3>
+        <h4>Clown College 2004</h4>
+        <p>Area of Study: Circus Prep</p>
+        <ul style ={{listStylePosition: 'inside'}}>
+          <li>Juggling</li>
+          <li>Tumbling</li>
+          <li>Wacky Dances</li>
+          </ul>
+
+          <h4>Auctioneer University 2008</h4>
+            <p>Area of Study: Fast Talk</p>
+            <ul style ={{listStylePosition: 'inside'}}>
+              <li>Rolling your R's</li>
+              <li>Combining endings and beginnings of words</li>
+              <li>Enunciation</li> 
+              </ul>
+
+        </div>,
+
+        document.querySelector('#application-education')
+      );
+      
+      function App(props) {
+          console.log(props)
+           return(
+               <header>My App</header>
+          );
+      };
+
+
+      
+
+        
+    </script>
+</body>
+</html>
